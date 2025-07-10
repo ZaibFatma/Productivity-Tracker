@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# 🧠 Productivity Tracker – Chrome Extension with Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Chrome extension that **tracks the time you spend on different websites** throughout the day, stores it on a backend, and shows beautiful charts (Pie & Bar) on a dashboard using React and Chart.js.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📁 Project Structure
+```bash
+productivity-extension/
+├── client/ # React dashboard
+│ ├── public/ # Static assets (favicon, manifest, etc.)
+│ ├── src/ # React components (App.js, charts, etc.)
+│ ├── build/ # Production-ready files (after npm run build)
+│ └── package.json # React dependencies
+│
+├── server/ # Node.js backend with Express + MongoDB
+│ ├── routes/ # API endpoints (track user time)
+│ └── server.js # Main backend file
+│
+├── extension/ # Chrome extension files
+│ ├── background.js # Background tracking logic
+│ ├── content.js # Page-level hostname capture
+│ ├── index.html # Popup UI (chart embedded)
+│ ├── popup.js # Chart rendering for extension
+│ └── manifest.json # Chrome extension config
 
-### `npm start`
+```
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ Tracks time per hostname (e.g. `youtube.com`)
+- ✅ Sends data from extension to backend
+- ✅ Stores time data in MongoDB
+- ✅ Real-time Pie & Bar charts using Chart.js
+- ✅ Normalizes hostname (`www.` removed)
+- ✅ Excludes `localhost` and shows `h m s` formatted durations
+- ✅ Toggle dark/light mode
+- ✅ Weekly vs Today breakdown
+- ✅ React DevTools compatible
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧪 Technologies Used
 
-### `npm run build`
+| Layer         | Tech                          |
+|--------------|-------------------------------|
+| Frontend      | React.js, Chart.js            |
+| Backend       | Node.js, Express.js, MongoDB  |
+| Extension     | JavaScript, Chrome APIs       |
+| Charts        | react-chartjs-2 + Chart.js    |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 How to Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧩 1. Run Backend Server (Express + MongoDB)
 
-### `npm run eject`
+```bash
+cd server
+npm install
+node server.js
+Make sure MongoDB is running locally or update your MongoDB URI in .env.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+💻 2. Run React Frontend
+bash
+Copy
+Edit
+cd client
+npm install
+npm start
+Visit the dashboard at http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🏗️ 3. Build React App
+bash
+Copy
+Edit
+cd client
+npm run build
+This generates the optimized files in /client/build.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🔌 4. Set up Chrome Extension
+Copy contents from client/build (like index.html, CSS, JS) into extension/ folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In Chrome:
 
-## Learn More
+Go to chrome://extensions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Turn on Developer Mode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Click Load Unpacked
 
-### Code Splitting
+Select the extension/ folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click the extension icon in your browser to view charts.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🙋‍♀️ Author
+👩‍💻 Kashish Kumari
 
-### Making a Progressive Web App
+📚 B.Tech CSE | Full-Stack Web Dev & DSA Learner
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🌐 MERN | Java | MongoDB | Chrome Extensions | React Charts
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📸 Screenshot
