@@ -115,4 +115,10 @@ Click the extension icon in your browser to view charts.
 
 ---
 
-📸 Screenshot
+## 📸 Screenshots
+
+### 🔍 Chrome Extension
+![Home Page](Screenshot/in_google_extension.png)
+
+### 🔍 Extension in React App
+![Home Page](Screenshot/in_react_app.png)
