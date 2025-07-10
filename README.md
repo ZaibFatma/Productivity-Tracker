@@ -2,8 +2,8 @@
 ```bash
 
 "COMPANY" : CODTECH IT SOLUTIONS
-"NAME" : KASHISH KUMARI
-"INTERN ID" : CT06DF642
+"NAME" : AKANKSHA KUMARI
+"INTERN ID" : CT06DF641
 "DOMAIN" : MERN STACK WEB DEVELOPMENT
 "DURATION" : 6 WEEKS
 "MENTOR" : Neela Santhosh Kumar
@@ -107,7 +107,7 @@ Click the extension icon in your browser to view charts.
 ---
 
 🙋‍♀️ Author
-👩‍💻 Kashish Kumari
+👩‍💻 Akanksha Kumari
 
 📚 B.Tech CSE | Full-Stack Web Dev & DSA Learner
 
