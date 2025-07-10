@@ -1,5 +1,15 @@
 # 🧠 Productivity Tracker – Chrome Extension with Dashboard
+```bash
 
+"COMPANY" : CODTECH IT SOLUTIONS
+"NAME" : KASHISH KUMARI
+"INTERN ID" : CT06DF642
+"DOMAIN" : MERN STACK WEB DEVELOPMENT
+"DURATION" : 6 WEEKS
+"MENTOR" : Neela Santhosh
+
+```
+---
 A Chrome extension that **tracks the time you spend on different websites** throughout the day, stores it on a backend, and shows beautiful charts (Pie & Bar) on a dashboard using React and Chart.js.
 
 ---
@@ -93,7 +103,8 @@ Click Load Unpacked
 Select the extension/ folder
 
 Click the extension icon in your browser to view charts.
-
+```
+---
 
 🙋‍♀️ Author
 👩‍💻 Kashish Kumari
@@ -101,5 +112,7 @@ Click the extension icon in your browser to view charts.
 📚 B.Tech CSE | Full-Stack Web Dev & DSA Learner
 
 🌐 MERN | Java | MongoDB | Chrome Extensions | React Charts
+
+---
 
 📸 Screenshot
