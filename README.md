@@ -6,7 +6,7 @@
 "INTERN ID" : CT06DF642
 "DOMAIN" : MERN STACK WEB DEVELOPMENT
 "DURATION" : 6 WEEKS
-"MENTOR" : Neela Santhosh
+"MENTOR" : Neela Santhosh Kumar
 
 ```
 ---
