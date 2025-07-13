@@ -2,8 +2,8 @@
 ```bash
 
 "COMPANY" : CODTECH IT SOLUTIONS
-"NAME" : AKANKSHA KUMARI
-"INTERN ID" : CT06DF641
+"NAME" : ZAIB FATMA
+"INTERN ID" : CT06DF639
 "DOMAIN" : MERN STACK WEB DEVELOPMENT
 "DURATION" : 6 WEEKS
 "MENTOR" : Neela Santhosh Kumar
@@ -107,7 +107,7 @@ Click the extension icon in your browser to view charts.
 ---
 
 🙋‍♀️ Author
-👩‍💻 Akanksha Kumari
+👩‍💻 Zaib Fatma
 
 📚 B.Tech CSE | Full-Stack Web Dev & DSA Learner
 
